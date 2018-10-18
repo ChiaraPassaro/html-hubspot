@@ -1,0 +1,83 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Nunito",Helvetica,Arial,sans-serif;
+  color: #33475b;
+}
+
+header, main, footer{
+  display: block;
+}
+
+/* Classi Generali */
+.relative{
+  position: relative;
+}
+
+.fixed{
+  position: fixed;
+}
+
+.float-lt{
+  float: left;
+}
+
+.float-rt{
+  float: right;
+}
+
+.inline-block{
+  display: inline-block;
+}
+
+.clear::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* .wrapper{
+  height: 2000px;
+  background: blue;
+} */
+
+/* Header */
+header .navbar-top{
+  height: 70px;
+  width: 100%;
+  background: #F3F7F9;
+  border-bottom: 1px solid #C4D0DE;
+}
+
+header .navbar-top .inner-wrapper-navbar-top{
+  margin: 0 auto;
+  width: 1200px;
+  padding: 20px;
+}
+
+/* Select delle lingue LISTA UL
+  Per ora c'è una sola lingua e non ha funzionalità Dropdown
+*/
+header .navbar-top .inner-wrapper-navbar-top .lang-select-wrapper{
+  cursor: pointer;
+}
+
+header .navbar-top .inner-wrapper-navbar-top .lang-select-wrapper .lang-select{
+  font-weight: bold;
+  margin: 0 5px;
+  list-style-type: none;
+}
+
+header .navbar-top .inner-wrapper-navbar-top .lang-select-wrapper .lang-select .lang-option a{
+  text-decoration: none;
+  color: #33475b;
+}
+
+/* Select Lang Icona freccia Dropdown */
+header .navbar-top .inner-wrapper-navbar-top .lang-select-wrapper .fa-sort-down{
+  color: #718DAD;
+}
