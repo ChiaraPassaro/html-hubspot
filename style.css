@@ -48,36 +48,45 @@ header, main, footer{
 /* Header */
 header .navbar-top{
   height: 70px;
+  line-height: 30px;
+  padding: 20px 0;
   width: 100%;
   background: #F3F7F9;
   border-bottom: 1px solid #C4D0DE;
 }
 
+/* Inner-wrapper Per centrare la navbar rispetto alla pagina*/
+
 header .navbar-top .inner-wrapper-navbar-top{
   margin: 0 auto;
   width: 1200px;
-  padding: 20px;
+  padding: 0 20px;
 }
 
-/* Select delle lingue LISTA UL
-  Per ora c'è una sola lingua e non ha funzionalità Dropdown
+/* Select-Wrapper LISTA UL
+  Per ora c'è un solo elemento e non ha funzionalità Dropdown
 */
-header .navbar-top .inner-wrapper-navbar-top .lang-select-wrapper{
+header .navbar-top .inner-wrapper-navbar-top .select-wrapper{
   cursor: pointer;
+  margin-right: 10px;
 }
-
-header .navbar-top .inner-wrapper-navbar-top .lang-select-wrapper .lang-select{
+header .navbar-top .inner-wrapper-navbar-top .select-wrapper:first-child{
+  border-right: 2px solid #C4D0DE;
+}
+header .navbar-top .inner-wrapper-navbar-top .select-option{
   font-weight: bold;
   margin: 0 5px;
   list-style-type: none;
 }
 
-header .navbar-top .inner-wrapper-navbar-top .lang-select-wrapper .lang-select .lang-option a{
+header .navbar-top .inner-wrapper-navbar-top .select-wrapper a{
   text-decoration: none;
   color: #33475b;
 }
 
 /* Select Lang Icona freccia Dropdown */
-header .navbar-top .inner-wrapper-navbar-top .lang-select-wrapper .fa-sort-down{
+header .navbar-top .inner-wrapper-navbar-top .fa-sort-down{
   color: #718DAD;
+  margin-right: 20px;
+  font-size: 20px;
 }
