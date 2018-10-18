@@ -23,6 +23,15 @@ header, main, footer{
   position: fixed;
 }
 
+.absolute-bottom{
+  position: absolute;
+  bottom:0;
+}
+
+.z-99{
+  z-index: 99;
+}
+
 .float-lt{
   float: left;
 }
@@ -33,6 +42,10 @@ header, main, footer{
 
 .inline-block{
   display: inline-block;
+}
+
+.display-none{
+  display: none;
 }
 
 .clear::after{
@@ -48,6 +61,7 @@ header, main, footer{
 .t-align-left{
   text-align: left;
 }
+
 
 /* Button */
 .btn{
@@ -80,13 +94,23 @@ header, main, footer{
   background: #b75e4d;
 }
 
-
-/* .wrapper{
+.wrapper{
   height: 2000px;
-  background: blue;
-} */
+  background-color: #ccc;
+}
+
+/* Inner-wrapper Per centrare rispetto alla pagina lasciando bordi colorati*/
+.inner-wrapper-1200{
+  margin: 0 auto;
+  width: 1200px;
+  padding: 0 20px;
+}
 
 /* Header */
+header{
+  height: 170px;
+}
+
 header .navbar-top{
   height: 70px;
   line-height: 30px;
@@ -108,14 +132,7 @@ header .navbar-top a:hover{
   color: #949faa;
 }
 
-/* Inner-wrapper Per centrare la navbar rispetto alla pagina*/
-header .navbar-top .inner-wrapper-navbar-top{
-  margin: 0 auto;
-  width: 1200px;
-  padding: 0 20px;
-}
-
-header .navbar-top .inner-wrapper-navbar-top .navbar-left{
+header .navbar-top .navbar-left{
   width: 40%;
   overflow: auto;
 }
@@ -123,31 +140,44 @@ header .navbar-top .inner-wrapper-navbar-top .navbar-left{
 /* Select-Wrapper LISTA UL
   Per ora c'è un solo elemento e non ha funzionalità Dropdown
 */
-header .navbar-top .inner-wrapper-navbar-top .navbar-left .select-wrapper{
+header .navbar-top .navbar-left .select-wrapper{
   cursor: pointer;
   margin-right: 10px;
 }
-header .navbar-top .inner-wrapper-navbar-top .navbar-left .select-wrapper:first-child{
+header .navbar-top .navbar-left .select-wrapper:first-child{
   border-right: 2px solid #C4D0DE;
 }
-header .navbar-top .inner-wrapper-navbar-top .navbar-left .select-option{
+header .navbar-top .navbar-left .select-option{
   font-weight: bold;
   margin: 0 5px;
   list-style-type: none;
 }
 
 /* Select Lang Icona freccia Dropdown */
-header .navbar-top .inner-wrapper-navbar-top .navbar-left .fa-sort-down{
+header .navbar-top .navbar-left .fa-sort-down{
   color: #718DAD;
   margin-right: 20px;
   font-size: 20px;
 }
 
-header .navbar-top .inner-wrapper-navbar-top .navbar-right{
+header .navbar-top .navbar-right{
   width: 60%;
   overflow: auto;
 }
 
-header .navbar-top .inner-wrapper-navbar-top .navbar-right > *{
+header .navbar-top .navbar-right > *{
   margin-left: 20px;
+}
+
+/* Navigazione principale */
+header .primary-nav{
+  width: 100%;
+  height: 100px;
+  background: #FFF;
+  line-height: 100px;
+}
+
+header .primary-nav .logo img{
+  height: 60%;
+  vertical-align: middle; /* Per centrarla in verticale*/
 }
