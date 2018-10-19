@@ -340,6 +340,8 @@ main .second-row{
 main .second-row .service-intro{
   width: 60%;
   margin: auto;
+  font-weight: lighter;
+
 }
 
 main .second-row .row{
@@ -478,10 +480,12 @@ main .third-row .text-wrapper h2{
 main .third-row .text-wrapper p.text-small{
   font-size: 0.8em;
   line-height: 1.8em;
+  font-weight: lighter;
 }
 
 main .third-row .table-number{
   margin-top: 60px;
+  font-weight: lighter;
 }
 
 main .third-row .table-number .table-row:not(:last-child){
@@ -511,4 +515,32 @@ main .third-row .table-number .title-block.add::after{
   content: '+';
   font-size: 0.5em;
   vertical-align: middle;
+}
+
+/* Fourth-row */
+main .fourth-row{
+  background: #FFF;
+  padding: 80px 0;
+}
+
+main .fourth-row .title-block{
+  font-size: 3em;
+}
+
+main .fourth-row .text-medium{
+  font-size: 1.4em;
+  font-weight: lighter;
+}
+
+main .fourth-row .text-medium strong{
+  font-weight: bold;
+}
+
+main .fourth-row .logo-list img{
+  width: 22%;
+  padding: 4%;
+
+}
+
+main .fourth-row .logo-list img:not(:last-child){
 }
