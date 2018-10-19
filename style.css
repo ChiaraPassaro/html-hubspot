@@ -94,6 +94,52 @@ header, main, footer{
   background: #b75e4d;
 }
 
+/* CLasse Ul Menu */
+ul.ul-menu-dropdown{
+  list-style-type: none;
+}
+
+ul.ul-menu-dropdown > li{
+  display:inline-block;
+  margin-right: 20px;
+}
+
+ul.ul-menu-dropdown > li:last-child{
+  margin-right: 0;
+}
+
+ul.ul-menu-dropdown > li a{
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ICONA TRIANGOLO DOWN solo su a che hanno figli
+  Test Selettore :not() e :only-child
+ */
+
+ul.ul-menu-dropdown > li a:not(:only-child):after{
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    font-size: 20px;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    content: "\f0dd";
+    color: #718DAD;
+    margin-left: 20px;
+}
+
+/* I link di secondo livello sono nascosti */
+
+ul.ul-menu-dropdown > li > ul{
+  display: none;
+}
+
+/* Impostazioni pagina */
 .wrapper{
   height: 2000px;
   background-color: #ccc;
