@@ -72,7 +72,11 @@ header, main, footer{
 }
 
 .width-60{
-  width: 40%;
+  width: 60%;
+}
+
+.width-70{
+  width: 70%;
 }
 
 .width-80{
@@ -352,7 +356,7 @@ main .second-row .service-item{
 }
 
 main .second-row .service-item .service-item-wrapper-content{
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -364,6 +368,55 @@ main .second-row .service-item .icon-block img{
   margin-bottom: 30px;
 }
 
+main .second-row .service-item .text-block p{
+  margin-bottom: 30px;
+}
+
 main .second-row .service-item .icon-block .btn{
   line-height: 50px;
+}
+
+main .second-row .service-item .text-block .wrapper-check-list{
+  width: 100%;
+}
+main .second-row .service-item .text-block .wrapper-check-list .title-check-list{
+  font-size: 1em;
+  text-transform: uppercase;
+  line-height: 1em;
+}
+
+main .second-row .service-item .text-block .wrapper-check-list .title-check-list::after{
+  content: '';
+  position: absolute;
+  width: 70%;
+  height: 1px;
+  background: #EFF1F5;
+  top: 0.5em;
+  right: 0;
+}
+
+main .second-row .service-item .text-block .wrapper-check-list ul.check-list{
+  list-style-type: none;
+}
+
+main .second-row .service-item .text-block .wrapper-check-list ul.check-list li{
+  display: inline-block;
+  margin-right: 20px;
+  line-height: 3em;
+}
+
+main .second-row .service-item .text-block .wrapper-check-list ul.check-list li::before{
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  content: "\f058";
+  color: #FF8166;
+  margin-right: 10px;
+  font-size: 1.2em;
 }
