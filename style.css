@@ -67,6 +67,14 @@ header, main, footer{
   text-align: center;
 }
 
+.width-20{
+  width: 20%;
+}
+
+.width-30{
+  width: 30%;
+}
+
 .width-40{
   width: 40%;
 }
@@ -134,7 +142,7 @@ header, main, footer{
 }
 
 .btn.btn-orange-bk:hover{
-  background: #b75e4d;
+  background: #FF8468;
 }
 
 /* CLasse Ul Menu */
@@ -353,6 +361,13 @@ main .second-row .service-item{
   border-radius: 3px;
   box-shadow: 2px 2px 2px #eaf0f6;
   padding: 30px;
+  transition: all 0.5s ease-out;
+}
+
+main .second-row .service-item:hover{
+  transform: scale(1.05);
+  box-shadow: 6px 6px 6px #eaf0f6;
+
 }
 
 main .second-row .service-item .service-item-wrapper-content{
@@ -360,11 +375,12 @@ main .second-row .service-item .service-item-wrapper-content{
   margin: 0 auto;
 }
 
-main .second-row .service-item .icon-block{
+/* main .second-row .service-item .icon-block{
   margin-right: 40px;
-}
+} */
+
 main .second-row .service-item .icon-block img{
-  width:80%;
+  height:150px;
   margin-bottom: 30px;
 }
 
@@ -372,20 +388,22 @@ main .second-row .service-item .text-block p{
   margin-bottom: 30px;
 }
 
-main .second-row .service-item .icon-block .btn{
+main .second-row .service-item .btn{
   line-height: 50px;
 }
 
 main .second-row .service-item .text-block .wrapper-check-list{
   width: 100%;
 }
+
 main .second-row .service-item .text-block .wrapper-check-list .title-check-list{
   font-size: 1em;
   text-transform: uppercase;
   line-height: 1em;
+  margin-bottom: 10px;
 }
 
-main .second-row .service-item .text-block .wrapper-check-list .title-check-list::after{
+main .second-row .service-item.width-90 .text-block .wrapper-check-list .title-check-list::after{
   content: '';
   position: absolute;
   width: 70%;
@@ -395,14 +413,31 @@ main .second-row .service-item .text-block .wrapper-check-list .title-check-list
   right: 0;
 }
 
+main .second-row .service-item.width-30 .text-block .wrapper-check-list{
+  padding-top: 2em;
+}
+
+main .second-row .service-item.width-30 .text-block .wrapper-check-list .title-check-list::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: #EFF1F5;
+  top: 0;
+  right: 0;
+}
+
 main .second-row .service-item .text-block .wrapper-check-list ul.check-list{
   list-style-type: none;
 }
 
 main .second-row .service-item .text-block .wrapper-check-list ul.check-list li{
-  display: inline-block;
   margin-right: 20px;
   line-height: 3em;
+}
+
+main .second-row .service-item.width-90 .text-block .wrapper-check-list ul.check-list li{
+  display: inline-block;
 }
 
 main .second-row .service-item .text-block .wrapper-check-list ul.check-list li::before{
@@ -419,4 +454,8 @@ main .second-row .service-item .text-block .wrapper-check-list ul.check-list li:
   color: #FF8166;
   margin-right: 10px;
   font-size: 1.2em;
+}
+
+main .second-row .row > .service-item:not(:last-child){
+  margin-right: 5%;
 }
