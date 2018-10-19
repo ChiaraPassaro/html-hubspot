@@ -333,7 +333,7 @@ main .first-row p.text-small{
 
 /* Second Row */
 main .second-row{
-  padding-top: 40px;
+  padding: 100px 0;
   background: #F3F7F9;
 }
 
@@ -360,7 +360,7 @@ main .second-row .service-item{
   background: #FFF;
   border-radius: 3px;
   box-shadow: 2px 2px 2px #eaf0f6;
-  padding: 30px;
+  padding:2%;
   transition: all 0.5s ease-out;
 }
 
@@ -375,10 +375,6 @@ main .second-row .service-item .service-item-wrapper-content{
   margin: 0 auto;
 }
 
-/* main .second-row .service-item .icon-block{
-  margin-right: 40px;
-} */
-
 main .second-row .service-item .icon-block img{
   height:150px;
   margin-bottom: 30px;
@@ -386,6 +382,11 @@ main .second-row .service-item .icon-block img{
 
 main .second-row .service-item .text-block p{
   margin-bottom: 30px;
+}
+
+main .second-row .service-item p.text-small{
+  font-size: 0.8em;
+  line-height: 1.5em;
 }
 
 main .second-row .service-item .btn{
@@ -415,6 +416,7 @@ main .second-row .service-item.width-90 .text-block .wrapper-check-list .title-c
 
 main .second-row .service-item.width-30 .text-block .wrapper-check-list{
   padding-top: 2em;
+  margin-bottom: 30px;
 }
 
 main .second-row .service-item.width-30 .text-block .wrapper-check-list .title-check-list::before{
@@ -458,4 +460,55 @@ main .second-row .service-item .text-block .wrapper-check-list ul.check-list li:
 
 main .second-row .row > .service-item:not(:last-child){
   margin-right: 5%;
+}
+
+/* Third row */
+
+main .third-row{
+  padding: 100px 0;
+  background: linear-gradient(to right, #009BB4, #00B49B);
+  color: #fff;
+}
+
+main .third-row .text-wrapper h2{
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+main .third-row .text-wrapper p.text-small{
+  font-size: 0.8em;
+  line-height: 1.8em;
+}
+
+main .third-row .table-number{
+  margin-top: 60px;
+}
+
+main .third-row .table-number .table-row:not(:last-child){
+  border-bottom: 1px solid #FFF;
+}
+
+main .third-row .table-number .table-row .table-column{
+  width: 25%;
+  float: left;
+  padding: 20px;
+}
+
+main .third-row .table-number .table-row .table-column:not(:last-child){
+  border-right: 1px solid #fff;
+}
+
+
+main .third-row .table-number .text-small{
+  font-size: 0.7em;
+}
+
+main .third-row .table-number .title-block{
+  font-size: 3em;
+}
+
+main .third-row .table-number .title-block.add::after{
+  content: '+';
+  font-size: 0.5em;
+  vertical-align: middle;
 }
