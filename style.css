@@ -79,6 +79,10 @@ header, main, footer{
   width: 40%;
 }
 
+.width-50{
+  width: 50%;
+}
+
 .width-60{
   width: 60%;
 }
@@ -162,6 +166,7 @@ ul.ul-menu-dropdown > li:last-child{
 ul.ul-menu-dropdown > li a{
   text-decoration: none;
   font-weight: bold;
+  color: #33475b;
 }
 
 /* ICONA TRIANGOLO DOWN solo su a che hanno figli
@@ -543,4 +548,43 @@ main .fourth-row .logo-list img{
 }
 
 main .fourth-row .logo-list img:not(:last-child){
+}
+
+/* Fifth-row */
+main .fifth-row{
+  background: #FFF;
+  padding: 60px 0;
+}
+
+main .fifth-row .title-block{
+  font-size: 2em;
+  line-height: 1.5;
+  margin-bottom: 30px
+}
+
+main .fifth-row .text-medium{
+  font-size: 1em;
+  font-weight: lighter;
+  margin-bottom: 30px
+}
+
+main .fifth-row .text-small{
+  font-size: 0.8em;
+}
+
+main .fifth-row .btn{
+  line-height: 60px;
+  margin-bottom: 30px;
+}
+
+main .fifth-row .img-wrapper-circle{
+  background: #F04A72;
+  width: 350px;
+  height: 350px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+main .fifth-row .img-wrapper-circle img{
+  width: 100%;
 }
