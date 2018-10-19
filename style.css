@@ -10,6 +10,11 @@ body{
   font-size: 14px;
 }
 
+p{
+  font-size: 14px;
+  line-height: 2em;
+}
+
 header, main, footer{
   display: block;
 }
@@ -58,8 +63,8 @@ header, main, footer{
   text-align: right;
 }
 
-.t-align-left{
-  text-align: left;
+.t-align-center{
+  text-align: center;
 }
 
 .column-40{
@@ -264,6 +269,7 @@ main .highlighted-block .highlighted-button .btn{
   width: 100%;
 }
 
+/* First Row */
 main .first-row{
   padding: 50px 0;
   background: linear-gradient(to top right, #0D9EB8, #78D0DF);
@@ -291,4 +297,23 @@ main .first-row .btn{
 main .first-row p.text-small{
   font-size: 0.8em;
   line-height: 1.5em;
+}
+
+/* Second Row */
+main .second-row{
+  padding-top: 40px;
+}
+
+main .second-row .services{
+  width: 60%;
+}
+
+main .second-row .services img{
+  height: 200px;
+}
+
+main .second-row h2.title-block{
+  font-size: 2em;
+  line-height: 1.3em;
+  margin-bottom: 30px;
 }
