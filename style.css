@@ -48,6 +48,14 @@ header, main, footer{
   display: none;
 }
 
+.center-w-h{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+
 .clear::after{
   content: '';
   display: table;
@@ -67,11 +75,22 @@ header, main, footer{
 .btn{
   font-weight: bold;
   display: inline-block;
-  border-radius: 2px;
-  padding: 0 8px;
+  border-radius: 3px;
+  padding: 0 5%;
   background: #FFF;
   line-height: inherit;
   cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  color: #33475b;
+}
+
+.btn:hover{
+  background: rgb(234,235,237,0.5);
+}
+
+.btn:visited{
+  color: #33475b;
 }
 
 .btn.btn-orange-br,
@@ -226,4 +245,26 @@ header .primary-nav{
 header .primary-nav .logo img{
   height: 60%;
   vertical-align: middle; /* Per centrarla in verticale*/
+}
+
+/* Main */
+/* Highlighted Block */
+main .highlighted-block{
+  background: #283646;
+  width: 100%;
+  padding: 20px 0;
+}
+
+main .highlighted-block .highlighted-text{
+  width: 70%;
+  color: #FFF;
+}
+
+main .highlighted-block .highlighted-button{
+  width: 10%;
+  line-height: 50px;
+}
+
+main .highlighted-block .highlighted-button .btn{
+  width: 100%;
 }
