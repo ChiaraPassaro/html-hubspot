@@ -67,8 +67,28 @@ header, main, footer{
   text-align: center;
 }
 
-.column-40{
+.width-40{
   width: 40%;
+}
+
+.width-60{
+  width: 40%;
+}
+
+.width-80{
+  width: 80%;
+}
+
+.width-90{
+  width: 90%;
+}
+
+.width-100{
+  width: 100%
+}
+
+.row{
+  margin: 0 auto;
 }
 
 /* Button */
@@ -160,7 +180,7 @@ ul.ul-menu-dropdown > li > ul{
 
 /* Impostazioni pagina */
 .wrapper{
-  height: 2000px;
+  /* height: 2000px; */
   background-color: #ccc;
 }
 
@@ -302,13 +322,19 @@ main .first-row p.text-small{
 /* Second Row */
 main .second-row{
   padding-top: 40px;
+  background: #F3F7F9;
 }
 
-main .second-row .services{
+main .second-row .service-intro{
   width: 60%;
+  margin: auto;
 }
 
-main .second-row .services img{
+main .second-row .row{
+  margin-bottom: 30px;
+}
+
+main .second-row .service-intro img{
   height: 200px;
 }
 
@@ -316,4 +342,28 @@ main .second-row h2.title-block{
   font-size: 2em;
   line-height: 1.3em;
   margin-bottom: 30px;
+}
+
+main .second-row .service-item{
+  background: #FFF;
+  border-radius: 3px;
+  box-shadow: 2px 2px 2px #eaf0f6;
+  padding: 30px;
+}
+
+main .second-row .service-item .service-item-wrapper-content{
+  width: 80%;
+  margin: 0 auto;
+}
+
+main .second-row .service-item .icon-block{
+  margin-right: 40px;
+}
+main .second-row .service-item .icon-block img{
+  width:80%;
+  margin-bottom: 30px;
+}
+
+main .second-row .service-item .icon-block .btn{
+  line-height: 50px;
 }
