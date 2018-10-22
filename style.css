@@ -238,12 +238,80 @@ ul.menu-social{
 }
 
 ul.menu-social > li{
-  color: #FFF;
   display: inline-block;
+}
+
+/* Nascondo il contenuto testuale del link */
+ul.menu-social > li > a span{
+  display: none;
+}
+
+/* Aggiungo regole generali per creare icona Font Awesome */
+ul.menu-social > li > a:before{
+  font-weight: 900;
+  font-family: "Font Awesome 5 Brands";
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
   margin-right: 15px;
   font-size: 1.3em;
 }
 
+/* Aggiungo icone specifiche before a */
+ul.menu-social > li > a.ico-fb:before{
+  content: "\f39e";
+}
+
+ul.menu-social > li > a.ico-instagram:before{
+  content: "\f16d";
+}
+
+ul.menu-social > li > a.ico-youtube:before{
+  content: "\f23a";
+}
+
+ul.menu-social > li > a.ico-twitter:before{
+  content: "\f099";
+}
+
+ul.menu-social > li > a.ico-linkedin:before{
+  content: "\f0e1";
+}
+
+ul.menu-social > li > a.ico-medium:before{
+  content: "\f23a";
+}
+
+/* UL Inline Menu */
+ul.ul-inline-menu{
+  list-style-type: none;
+}
+
+ul.ul-inline-menu > li{
+  display:inline-block;
+  margin-right: 20px;
+}
+
+ul.ul-inline-menu > li:last-child{
+  margin-right: 0;
+}
+
+ul.ul-inline-menu li a{
+  text-decoration: none;
+}
+
+ul.ul-inline-menu.lightblue-t-color > li a,
+ul.ul-inline-menu.lightblue-t-color > li a:visited{
+  color:#cbd6e2;
+}
+
+ul.ul-inline-menu.lightblue-t-color > li a:hover{
+  color:#0091ae;
+}
 
 /* Impostazioni pagina */
 .wrapper{
@@ -642,11 +710,35 @@ main .fifth-row .img-wrapper-circle img{
 /* Footer */
 footer{
   background: #33475B;
-  color: #FFF;
+  color: #cbd6e2;
   padding: 80px 0;
 }
 
 footer .title-block{
   font-size: 1em;
   margin-bottom: 10px;
+}
+
+footer .menu-language{
+  margin: 40px 0;
+}
+
+footer .copyright{
+  vertical-align: middle;
+}
+
+footer .copyright img{
+  display: block;
+  margin-bottom: 20px;
+  width: 100px;
+}
+
+footer .copyright .text-small{
+  font-size: 0.8em;
+  font-weight: lighter;
+}
+
+footer .copyright{
+  border-top: 1px solid #7c98b6;
+  padding: 40px 0;
 }
