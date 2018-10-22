@@ -33,10 +33,6 @@ header, main, footer{
   bottom:0;
 }
 
-.z-1{
-  z-index: 1;
-}
-
 .z-99{
   z-index: 99;
 }
@@ -107,12 +103,22 @@ header, main, footer{
   width: 100%
 }
 
+.m-bottom-30{
+  margin-bottom: 30px;
+}
+
 .row{
   margin: 0 auto;
 }
 
+/****
+Four Colunm
+tutte le colonne tranne l'ultima hanno margin-right 30px
+calc((dimensioni totali/num colonne) - ((margin-right)*(numero colonne -1)/num colonne))
+***/
+
 .four-column > .column{
-  width: calc((100%/4) - (90px/4));
+  width: calc((100%/4) - ((30px*3)/4));
 }
 
 .four-column > .column:not(:last-child){
@@ -139,6 +145,14 @@ header, main, footer{
 
 .btn:visited{
   color: #33475b;
+}
+
+.btn-medium{
+  line-height: 50px;
+}
+
+.btn-big{
+  line-height: 70px;
 }
 
 .btn.btn-orange-br,
@@ -319,8 +333,7 @@ ul.ul-inline-menu.lightblue-t-color > li a:hover{
 
 /* Impostazioni pagina */
 .wrapper{
-  /* height: 2000px; */
-  background-color: #ccc;
+  background-color: #F3F7F9;
 }
 
 /* Inner-wrapper Per centrare rispetto alla pagina lasciando bordi colorati*/
@@ -415,17 +428,7 @@ main .highlighted-block{
 }
 
 main .highlighted-block .highlighted-text{
-  width: 70%;
   color: #FFF;
-}
-
-main .highlighted-block .highlighted-button{
-  width: 10%;
-  line-height: 50px;
-}
-
-main .highlighted-block .highlighted-button .btn{
-  width: 100%;
 }
 
 /* First Row */
@@ -464,11 +467,6 @@ main .first-row .wrapper-text h2.title-block{
 main .first-row .wrapper-text p.text-medium{
   font-size: 1em;
   line-height: 1.6em;
-  margin-bottom: 20px;
-}
-
-main .first-row .wrapper-text .btn{
-  line-height: 70px;
   margin-bottom: 20px;
 }
 
@@ -688,9 +686,6 @@ main .fourth-row .logo-list img{
 
 }
 
-main .fourth-row .logo-list img:not(:last-child){
-}
-
 /* Fifth-row */
 main .fifth-row{
   background: #FFF;
@@ -700,22 +695,17 @@ main .fifth-row{
 main .fifth-row .title-block{
   font-size: 2em;
   line-height: 1.5;
-  margin-bottom: 30px
+  margin-bottom: 30px;
 }
 
 main .fifth-row .text-medium{
   font-size: 1em;
   font-weight: lighter;
-  margin-bottom: 30px
+  margin-bottom: 30px;
 }
 
 main .fifth-row .text-small{
   font-size: 0.8em;
-}
-
-main .fifth-row .btn{
-  line-height: 60px;
-  margin-bottom: 30px;
 }
 
 main .fifth-row .img-wrapper-circle{
