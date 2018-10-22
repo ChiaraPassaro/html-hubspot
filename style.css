@@ -107,6 +107,14 @@ header, main, footer{
   margin: 0 auto;
 }
 
+.four-column > .column{
+  width: calc((100%/4) - (90px/4));
+}
+
+.four-column > .column:not(:last-child){
+  margin-right: 30px;
+}
+
 /* Button */
 .btn{
   font-weight: bold;
@@ -163,10 +171,8 @@ ul.ul-menu-dropdown > li:last-child{
   margin-right: 0;
 }
 
-ul.ul-menu-dropdown > li a{
+ul.ul-menu-dropdown li a{
   text-decoration: none;
-  font-weight: bold;
-  color: #33475b;
 }
 
 /* ICONA TRIANGOLO DOWN solo su a che hanno figli
@@ -191,9 +197,53 @@ ul.ul-menu-dropdown > li a:not(:only-child):after{
 
 /* I link di secondo livello sono nascosti */
 
-ul.ul-menu-dropdown > li > ul{
+ul.ul-menu-dropdown > li > ul.sub-menu{
   display: none;
 }
+
+ul.ul-menu-dropdown.blue-t-color li a:not(.btn),
+ul.ul-menu-dropdown.blue-t-color li a:not(.btn):visited{
+  color: #33475b;
+}
+
+
+ul.ul-menu-dropdown.lightblue-t-color li a:not(.btn),
+ul.ul-menu-dropdown.lightblue-t-color li a:not(.btn):visited{
+  color: #cbd6e2;
+}
+
+ul.ul-menu-dropdown.lightblue-t-color  > li a:not(:only-child),
+ul.ul-menu-dropdown.lightblue-t-color  > li a:not(:only-child):visited,
+ul.ul-menu-dropdown.lightblue-t-color  > li a:not(:only-child):after{
+    color: #FFF;
+}
+
+ul.ul-menu-dropdown.lightblue-t-color li a:not(.btn):hover{
+  color:#0091ae;
+}
+
+ul.ul-menu-dropdown.vertical > li{
+  display: block;
+  line-height: 2.5em;
+  font-weight: lighter;
+}
+
+ul.ul-menu-dropdown.vertical > li > .btn{
+  margin: 1em 0;
+}
+
+/* Ul List Icone Social */
+ul.menu-social{
+  list-style-type: none;
+}
+
+ul.menu-social > li{
+  color: #FFF;
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 1.3em;
+}
+
 
 /* Impostazioni pagina */
 .wrapper{
@@ -587,4 +637,16 @@ main .fifth-row .img-wrapper-circle{
 
 main .fifth-row .img-wrapper-circle img{
   width: 100%;
+}
+
+/* Footer */
+footer{
+  background: #33475B;
+  color: #FFF;
+  padding: 80px 0;
+}
+
+footer .title-block{
+  font-size: 1em;
+  margin-bottom: 10px;
 }
