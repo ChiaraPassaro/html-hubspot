@@ -140,7 +140,7 @@ calc((dimensioni totali/num colonne) - ((margin-right)*(numero colonne -1)/num c
 }
 
 .btn:hover{
-  background: rgb(234,235,237,0.5);
+  background: rgba(234,235,237, 0.5);
 }
 
 .btn:visited{
